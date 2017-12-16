@@ -33,7 +33,7 @@ class DeckEditor extends Component {
   };
 
   handleKeyPress = event => {
-    if (event.key == "Enter" && this.state.question && this.state.answer) {
+    if (event.key === "Enter" && this.state.question && this.state.answer) {
       this.onAddCardHandler();
     }
   };

@@ -80,8 +80,9 @@ const reducer = (state = initState, action) => {
           ...newCards
         }
       };
+    default:
+      return state;
   }
-  return state;
 };
 
 export default reducer;
