@@ -1,0 +1,71 @@
+h1,
+p {
+  font-family: Lato;
+}
+
+.App-layout {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 2em;
+  background: lavender;
+}
+
+.DeckThumb {
+  padding: 1em;
+  margin: 1em;
+  box-shadow: 1px 0 2px 1px #333;
+  cursor: pointer;
+}
+
+.Card {
+  padding: 1em;
+  margin: 1em;
+  box-shadow: 1px 0 2px 1px #333;
+}
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form-group > div {
+  padding: 1em;
+}
+
+.form-group div textarea {
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  cursor: pointer;
+}
+
+.card-container {
+  cursor: pointer;
+  perspective: 600;
+}
+.flipcard {
+  top: 0;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  min-height: 200px;
+}
+.flipcard.clicked {
+  transform: rotateY(180deg);
+}
+.flipcard .Card {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  background: #fff;
+}
+.flipcard .back {
+  transform: rotateY(180deg);
+}

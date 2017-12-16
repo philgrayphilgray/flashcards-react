@@ -1,0 +1,6 @@
+export const CHANGE_QUESTION = 'CHANGE_QUESTION';
+export const CHANGE_ANSWER = 'CHANGE_ANSWER';
+export const ADD_CARD = 'ADD_CARD';
+export const DELETE_CARD = 'DELETE_CARD';
+export const INCREASE_ATTEMPTS = 'INCREASE_ATTEMPTS';
+export const INCREASE_PEEKS = 'INCREASE_PEEKS';
